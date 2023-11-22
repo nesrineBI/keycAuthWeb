@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Authentification avec Keycloak</title>
+</head>
+
+<body>
+    <h1>Authentification avec Keycloak</h1>
+    <button id="loginButton">Se connecter avec Keycloak</button>
+
+    <script>
+        document.getElementById('loginButton').addEventListener('click', function() {
+            // Redirection vers la page d'authentification de Keycloak
+            window.location.href = "{{ url_for('login') }}"
+        });
+    </script>
+</body>
+
+</html>
